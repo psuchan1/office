@@ -10,17 +10,18 @@ class Student
 {
 	private:
 
-	std::sting name;
-	std::sting surname;
+	std::string name;
+	std::string surname;
 
-	unsigned int index;
-	unsigned int semester;
-	std::sting birth_date;
-	Status status;
-	unsigned int ects;
-	int balance;
+	unsigned int index {0};
+	unsigned int semester {1};
+	std::string birth_date {"11-11-1111"};
+	Status status {Status::active};
+	unsigned int ects {0};
+	int balance {0};
 	
-		
-
-
+	public:
+	Student(std::string name, std::string surname, std::string birth_date)
+	: name(name), surname(surname)
+	{};		
 };
